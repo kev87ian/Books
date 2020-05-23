@@ -4,6 +4,13 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView"
+        android:src="@drawable/bg"
+        android:scaleType="centerCrop" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -15,19 +22,11 @@
         android:textColor="@color/primary_text"/>
 
     <Button
-        android:id="@+id/FindBooksButton"
+        android:id="@+id/findBooksButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:text="Get Started" />
-
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:id="@+id/imageView"
-        android:src="@drawable/bg"
-        android:scaleType="centerCrop" />
 
 </RelativeLayout>
