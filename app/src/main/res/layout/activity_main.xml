@@ -32,6 +32,7 @@
         android:layout_marginBottom="10dp"
         android:padding="5dp"
         android:hint="Enter Book Name"
+        android:inputType="text"
         android:layout_centerHorizontal="true" />
 
 
