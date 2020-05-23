@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         mTitleEditText= (EditText) findViewById(R.id.titleEditText);
        mFindBooksButton = (Button)findViewById(R.id.findBooksButton);
 
+       // Declaring Validation
        awesomeValidation = new AwesomeValidation(ValidationStyle.BASIC);
        awesomeValidation.addValidation(this, R.id.titleEditText,
                RegexTemplate.NOT_EMPTY, R.string.invalid_name);
@@ -40,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
                    String title = mTitleEditText.getText().toString();
                    Log.d(TAG, title);
                    Intent intent = new Intent(MainActivity.this, BookGenre.class);
+                   intent.putExtra("title", title);
                    startActivity(intent);
                }
 
