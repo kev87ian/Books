@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private Button mFindBooksButton;
@@ -19,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
        mFindBooksButton.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
-               Intent intent = new Intent(MainActivity.this, BooksGenre.class);
+               Toast.makeText(MainActivity.this, "Find your Book", Toast.LENGTH_LONG).show();
            }
        });
     }
