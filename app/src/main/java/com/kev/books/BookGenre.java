@@ -9,9 +9,13 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.ArrayAdapter;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
+
 public class BookGenre extends AppCompatActivity {
-    private TextView mTitleTextView;
-    private ListView mListView;
+   @BindView(R.id.titleTextView) TextView mTitleTextView;
+   @BindView(R.id.listView) ListView mListView;
     private String[] Books = new String[] {"The Fault in Our Stars", "The Subtle Art of Not Giving"};
 
     @Override
@@ -19,8 +23,7 @@ public class BookGenre extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_book_genre);
 
-        mTitleTextView = (TextView) findViewById(R.id.titleTextView);
-        mListView = (ListView)findViewById(R.id.listView);
+        ButterKnife.bind(this);
 
         ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, Books);
         mListView.setAdapter(adapter);

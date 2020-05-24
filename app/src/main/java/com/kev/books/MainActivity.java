@@ -13,11 +13,15 @@ import android.widget.Toast;
 import com.basgeekball.awesomevalidation.AwesomeValidation;
 import com.basgeekball.awesomevalidation.ValidationStyle;
 import com.basgeekball.awesomevalidation.utility.RegexTemplate;
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 
 public class MainActivity extends AppCompatActivity {
     public static final String TAG = MainActivity.class.getSimpleName();
-    private Button mFindBooksButton;
-    private EditText mTitleEditText;
+
+     @BindView(R.id.findBooksButton) Button mFindBooksButton;
+     @BindView(R.id.titleEditText) EditText mTitleEditText;
 
     AwesomeValidation awesomeValidation;
 
@@ -26,8 +30,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mTitleEditText= (EditText) findViewById(R.id.titleEditText);
-       mFindBooksButton = (Button)findViewById(R.id.findBooksButton);
+        ButterKnife.bind(this);
 
        // Declaring Validation
        awesomeValidation = new AwesomeValidation(ValidationStyle.BASIC);
@@ -37,6 +40,8 @@ public class MainActivity extends AppCompatActivity {
        mFindBooksButton.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
+       //Control Statements
+
                if (awesomeValidation.validate()){
                    String title = mTitleEditText.getText().toString();
                    Log.d(TAG, title);
