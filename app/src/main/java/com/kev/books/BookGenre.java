@@ -16,7 +16,7 @@ import butterknife.ButterKnife;
 public class BookGenre extends AppCompatActivity {
    @BindView(R.id.titleTextView) TextView mTitleTextView;
    @BindView(R.id.listView) ListView mListView;
-    private String[] Books = new String[] {"The Fault in Our Stars", "The Subtle Art of Not Giving"};
+    private String[] Books = new String[] {"The Fault in Our Stars", "The Subtle Art of Not Giving a F*#", "The Sudden Appearance of Hope"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +28,7 @@ public class BookGenre extends AppCompatActivity {
         ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, Books);
         mListView.setAdapter(adapter);
 
-        Intent intent = getIntent();
+        intent= getIntent();
         String title = intent.getStringExtra("title");
         mTitleTextView.setText("Here are all the titles available related to " + title);
     }

@@ -22,7 +22,6 @@ public class MainActivity extends AppCompatActivity {
 
      @BindView(R.id.findBooksButton) Button mFindBooksButton;
      @BindView(R.id.titleEditText) EditText mTitleEditText;
-
     AwesomeValidation awesomeValidation;
 
     @Override
@@ -51,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
                }
 
                else{
-                   Toast.makeText(MainActivity.this, "Title cannot be blank", Toast.LENGTH_LONG).show();
+                   Toast.makeText(MainActivity.this, "Name cannot be blank", Toast.LENGTH_LONG).show();
                }
 
            }
