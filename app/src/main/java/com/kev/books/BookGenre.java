@@ -22,7 +22,7 @@ public class BookGenre extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_book_genre);
-
+        Intent intent = new Intent(BookGenre.this, ContactUs.class);
         ButterKnife.bind(this);
 
         ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, Books);

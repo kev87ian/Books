@@ -4,15 +4,23 @@
 
 
     <TextView
+        android:id="@+id/titleTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="The Following are the available Title "
-        android:id="@+id/titleTextView"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:text="The Following are the available Titles " />
 
     <ListView
         android:id="@+id/listView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/contactUs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25dp"
+            android:text="Contact Us" />
+
 </RelativeLayout>

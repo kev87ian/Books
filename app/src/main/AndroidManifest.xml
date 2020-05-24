@@ -10,11 +10,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ContactUs"></activity>
         <activity android:name=".BookGenre">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.kev.books.MainActivity">
-            </meta-data>
+                android:value="com.kev.books.MainActivity"></meta-data>
         </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
