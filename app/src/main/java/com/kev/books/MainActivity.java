@@ -47,12 +47,12 @@ public class MainActivity extends AppCompatActivity {
                    Intent intent = new Intent(MainActivity.this, BookGenre.class);
                    intent.putExtra("title", title);
                    startActivity(intent);
+                   Toast.makeText(MainActivity.this, "And So, Your Journey of Literature Begins", Toast.LENGTH_SHORT).show();
                }
 
                else{
                    Toast.makeText(MainActivity.this, "Name cannot be blank", Toast.LENGTH_LONG).show();
                }
-
            }
        });
 
