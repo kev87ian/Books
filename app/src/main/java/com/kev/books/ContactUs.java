@@ -30,13 +30,6 @@ public class ContactUs extends AppCompatActivity {
         setContentView(R.layout.contact_us);
 
         ButterKnife.bind(this);
-        submitMessageButton.setOnClickListener(new View.OnClickListener() {
 
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(ContactUs.this, MainActivity.class);
-                startActivity(intent);
-            }
-        });
-    }
+}
 }
