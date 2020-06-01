@@ -15,8 +15,8 @@
  - Java
  
 ## Demo 
-[](Images/Screenshot_20200601-203354.png)
-[](Images/Screenshot_20200601-203403.png)
+![](Images/Screenshot_20200601-203354.png)
+![](Images/Screenshot_20200601-203403.png)
 
 ## Known Bugs
 - No thumbnail is fetched
