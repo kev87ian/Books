@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Books</string>
+    <string name="invalid_name">Quer cannot be blank</string>
+</resources>
