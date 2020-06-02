@@ -19,7 +19,7 @@ import butterknife.ButterKnife;
 
 
 public class ContactUs extends AppCompatActivity {
-    //  private EditText editTextName, editTextEmail, editTextMessage;
+    
     @BindView(R.id.editTextName) EditText editTextName;
     @BindView(R.id.editTextEmail) EditText editTextEmail;
     @BindView(R.id.submitMessageButton) Button submitMessageButton;
