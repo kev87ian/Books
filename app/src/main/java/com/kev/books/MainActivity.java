@@ -28,7 +28,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, BookGenre.class);
                 startActivity(intent);
-                Log.d(TAG, "Malaya");
                 Toast.makeText(MainActivity.this,"And so, your journey of literature begins!", Toast.LENGTH_SHORT).show();
             }
         }));
