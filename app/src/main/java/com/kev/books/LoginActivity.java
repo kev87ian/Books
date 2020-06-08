@@ -15,7 +15,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class LoginActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
 
     FirebaseAuth mAuth;
     EditText editTextEmail, editTextPassword;
@@ -24,16 +24,17 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
 
         mAuth = FirebaseAuth.getInstance();
 
-        editTextEmail = findViewById(R.id.editTextEmail);
-        editTextPassword = findViewById(R.id.editTextPassword);
-        progressBar = findViewById(R.id.progressbar);
+        editTextEmail = (EditText) findViewById(R.id.editTextEmail);
+        editTextPassword = (EditText) findViewById(R.id.editTextPassword);
+        progressBar = (ProgressBar) findViewById(R.id.progressbar);
 
-        findViewById(R.id.textViewSignup).setOnClickListener((View.OnClickListener) this);
-        findViewById(R.id.buttonLogin).setOnClickListener((View.OnClickListener) this);
+        findViewById(R.id.textViewSignup).setOnClickListener(this);
+        findViewById(R.id.buttonLogin).setOnClickListener(this);
+
     }
 
     private void userLogin() {
@@ -72,7 +73,7 @@ public class LoginActivity extends AppCompatActivity {
                 progressBar.setVisibility(View.GONE);
                 if (task.isSuccessful()) {
                     finish();
-                    Intent intent = new Intent(LoginActivity.this, BookDetailActivity.class);
+                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);
                 } else {
@@ -88,10 +89,11 @@ public class LoginActivity extends AppCompatActivity {
 
         if (mAuth.getCurrentUser() != null) {
             finish();
-            startActivity(new Intent(this, BookDetailActivity.class));
+            startActivity(new Intent(this, MainActivity.class));
         }
     }
 
+    @Override
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.textViewSignup:

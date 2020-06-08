@@ -99,7 +99,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
 
             case R.id.textViewLogin:
                 finish();
-                startActivity(new Intent(this, MainActivity.class));
+                startActivity(new Intent(this, LoginActivity.class));
                 break;
         }
     }
