@@ -1,4 +1,18 @@
 <resources>
     <string name="app_name">Books</string>
-    <string name="invalid_name">Quer cannot be blank</string>
+    <string name="error_text">Error loading data</string>
+    <string name="book_title">Book Title</string>
+    <string name="authors">Authors</string>
+    <string name="publisher">Publisher</string>
+    <string name="published_date">Published Date</string>
+    <string name="image_description">Place Holder for Book Image</string>
+    <string name="search">Search Book</string>
+    <string name="subtitle">Subtitle</string>
+    <string name="more_book_info">Further Info</string>
+    <string name="advanced_search">Advanced Search</string>
+    <string name="hint_title">Insert Title</string>
+    <string name="hint_author">Insert Author</string>
+    <string name="hint_publisher">Insert Publisher</string>
+    <string name="hint_ISBN">Insert ISBN</string>
+    <string name="empty_search_data">Missing query data!</string>
 </resources>
