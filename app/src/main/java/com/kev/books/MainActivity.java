@@ -44,10 +44,10 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-//            case R.id.action_advanced_search:
-//                Intent intent = new Intent(this, AdvancedSearchActivity.class);
-//                startActivity(intent);
-//                return true;
+            case R.id.action_advanced_search:
+                Intent intent = new Intent(this, AdvancedSearchActivity.class);
+                startActivity(intent);
+                return true;
             default:
 
                 int position = item.getItemId() + 1;
