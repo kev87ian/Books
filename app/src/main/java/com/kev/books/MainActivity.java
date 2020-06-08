@@ -14,6 +14,8 @@ import android.widget.ProgressBar;
 import android.widget.SearchView;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
@@ -22,6 +24,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
 
     private ProgressBar mProgress;
     private RecyclerView mBooksView;
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -70,7 +73,9 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
 
                 return super.onOptionsItemSelected(item);
         }
-    }
+
+}
+
 
     @Override
     public boolean onQueryTextSubmit(String query) {
@@ -86,6 +91,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
 
     @Override
     public boolean onQueryTextChange(String newText) {
+
         return false;
     }
 
@@ -107,7 +113,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
 
         try {
             if (url == null || url.isEmpty()) {
-                bookUrl = ApiUtil.buildUrl("flower");
+                bookUrl = ApiUtil.buildUrl("android");
             } else {
                 bookUrl = new URL(url);
             }
@@ -116,6 +122,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
             Log.d("Error", e.getMessage());
         }
     }
+
 
     public class BooksQueryTask extends AsyncTask<URL, Void, String> {
 
@@ -157,5 +164,6 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
         }
 
     }
-;
+
+
 }
