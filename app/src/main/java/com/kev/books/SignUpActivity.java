@@ -100,6 +100,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
             case R.id.textViewLogin:
                 finish();
                 startActivity(new Intent(this, LoginActivity.class));
+                Toast.makeText(this, "Sign in in the next screen", Toast.LENGTH_LONG).show();
                 break;
         }
     }

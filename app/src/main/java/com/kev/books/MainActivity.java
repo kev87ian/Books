@@ -155,5 +155,6 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
             mProgress.setVisibility(View.VISIBLE);
             mBooksView.setVisibility(View.INVISIBLE);
         }
+
     }
 }

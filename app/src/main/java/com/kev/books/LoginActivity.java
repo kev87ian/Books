@@ -76,6 +76,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                     Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);
+                    Toast.makeText(LoginActivity.this, "Login was Successful", Toast.LENGTH_LONG).show();
                 } else {
                     Toast.makeText(getApplicationContext(), task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                 }
@@ -99,6 +100,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             case R.id.textViewSignup:
                 finish();
                 startActivity(new Intent(this, SignUpActivity.class));
+                Toast.makeText(this, "Create an account in the next screen", Toast.LENGTH_LONG).show();
                 break;
 
             case R.id.buttonLogin:
