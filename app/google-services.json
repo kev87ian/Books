@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "235186550611",
+    "firebase_url": "https://books----ip.firebaseio.com",
+    "project_id": "books----ip",
+    "storage_bucket": "books----ip.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:235186550611:android:c0d34fd730072b967f93a6",
+        "android_client_info": {
+          "package_name": "com.kev.books"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "235186550611-eil26jvjurfs8mb4pq5c9nq7ouk04uv5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBobrOo9qeq7wR_mBmxK0tf-hmVJyMO9hA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "235186550611-eil26jvjurfs8mb4pq5c9nq7ouk04uv5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
