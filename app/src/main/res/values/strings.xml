@@ -14,5 +14,5 @@
     <string name="hint_author">Insert Author</string>
     <string name="hint_publisher">Insert Publisher</string>
     <string name="hint_ISBN">Insert ISBN</string>
-    <string name="empty_search_data">Missing query data!</string>
+    <string name="empty_search_data">Fill in at least one field!</string>
 </resources>
